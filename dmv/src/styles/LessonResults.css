@@ -1,0 +1,62 @@
+.lesson-results-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lesson-results-content {
+    margin: 20px;
+  }
+  
+  .lesson-results-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .progress-container {
+    margin: 20px;
+  }
+  
+  .circle-progress {
+    width: 148px;
+    height: 148px;
+    margin: 20px;
+  }
+  
+  .main-circle {
+    stroke-width: 18;
+    fill: none;
+  }
+  
+  .double-circle-inner-text {
+    font-size: 32px;
+    font-weight: bold;
+    text-anchor: middle;
+  }
+  
+  .reached-points {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .max-points {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .continue-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

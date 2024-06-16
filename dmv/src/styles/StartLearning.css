@@ -1,0 +1,120 @@
+.start-learning-container {
+    display: flex;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-content {
+    width: 75%;
+    padding: 20px;
+  }
+  
+  .dashboard-fragments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .vehicle-fragment,
+  .questions-fragment,
+  .leaderboard-fragment {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 32%;
+  }
+  
+  .fragment-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .view-block {
+    margin-bottom: 20px;
+  }
+  
+  .view-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .flexed-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  .oval {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  .view-block-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .view-block-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  .checkmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: #333;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .item-title-block {
+    flex-grow: 1;
+  }
+  
+  .active-title-block {
+    font-weight: bold;
+  }
+  
+  .title {
+    font-size: 14px;
+    color: #333;
+  }
+  

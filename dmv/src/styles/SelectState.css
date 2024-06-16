@@ -1,0 +1,31 @@
+.select-state-container {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .select-state-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .select-state-dropdown select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .select-state-container button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .select-state-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

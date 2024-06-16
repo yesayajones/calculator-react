@@ -1,0 +1,43 @@
+.components-pages-Dashboard-RoadmapFragment-ClassicView-ViewBlock-ViewBlockItemStyles__viewBlockItem--VOXXZ {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .components-pages-Dashboard-RoadmapFragment-ClassicView-ViewBlock-ViewBlockItemStyles__line--qFGJK {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  .components-pages-Dashboard-RoadmapFragment-ClassicView-ViewBlock-ViewBlockItemStyles__checkmark--zIRrp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: #333;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .components-pages-Dashboard-RoadmapFragment-ClassicView-ViewBlock-ViewBlockItemStyles__active--WNuRw {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .components-pages-Dashboard-RoadmapFragment-ClassicView-ViewBlock-ViewBlockItemStyles__itemTitleBlock--Rbhsu {
+    flex-grow: 1;
+  }
+  
+  .components-pages-Dashboard-RoadmapFragment-ClassicView-ViewBlock-ViewBlockItemStyles__activeTitleBlock--PKOUI {
+    font-weight: bold;
+  }
+  
+  .components-pages-Dashboard-RoadmapFragment-ClassicView-ViewBlock-ViewBlockItemStyles__title--BFtKF {
+    font-size: 14px;
+    color: #333;
+  }
+  

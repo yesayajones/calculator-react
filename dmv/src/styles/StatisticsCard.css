@@ -1,0 +1,26 @@
+.statistics-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  
+  .statistics-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .statistics-card-value {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .statistics-card-description {
+    font-size: 14px;
+    color: #666;
+  }
+  

@@ -1,0 +1,29 @@
+.select-vehicle-container {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .select-vehicle-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .vehicle-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .vehicle-option {
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .vehicle-option img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .vehicle-option p {
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,16 @@
+.lesson-content {
+    padding: 20px;
+  }
+  
+  .lesson-content h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .lesson-content img,
+  .lesson-content video {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  

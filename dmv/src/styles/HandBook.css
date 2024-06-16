@@ -1,0 +1,33 @@
+.handbook {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .handbook h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .handbook-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .plus-button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  

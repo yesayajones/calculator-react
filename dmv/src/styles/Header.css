@@ -1,0 +1,69 @@
+.header {
+  background-color: #f2f9f9;
+  box-shadow: none;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo-container .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.burger-menu {
+  /* Add styles for the burger menu icon */
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.login-button,
+.signup-button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-button {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.signup-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.tab {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.tab.selected {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+}
