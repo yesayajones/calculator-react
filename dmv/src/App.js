@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Features from './components/Features';
+import How from './components/How';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import StartLearning from './components/StartLearning';
@@ -172,8 +172,7 @@ const HomePage = ({ isLoggedIn }) => {
   return (
     <>
       <Hero />
-      <Features />
-      <Testimonials />
+      <How />
       <Footer />
     </>
   );

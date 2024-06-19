@@ -40,35 +40,45 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
 
   return (
     <header className="header">
-      <div className="container">
-        <div className="logo-container">
-          <Link to="/start-learning" className="logo">
-            {/* Add your logo content here */}
-            <div className="logo-image"></div>
-          </Link>
+      <header style={{ backgroundColor: '#F2F9F9', boxShadow: 'none' }} className="anonimHeaderBookingContainer">
+      <div className="innerContainer">
+          <div className="logoContainer">
+            <Link to="/" className="logo">
+              dmv
+            </Link>
+          </div>
+          <div className="burgerMenuButton"></div>
+          
+          <div className="tabs">
+            <Link to="/tests" className={`tab ${currentPath === '/' ? 'selectedTab' : ''}`}>
+              PRACTICE TESTS
+            </Link>
+            <Link to="/statistics" className={`tab ${currentPath === '/statistics' ? 'selectedTab' : ''}`}>
+              STATISTICS
+            </Link>
+            <Link to="/hand-book" className={`tab ${currentPath === '/hand-book' ? 'selectedTab' : ''}`}>
+              HANDBOOK
+            </Link>
+          </div>
+          <div className="buttons">
+            <Link to="/login" className="loginButton">
+              LOG IN
+            </Link>
+            <Link to="/signup" className="signUpButton">
+              SIGN UP
+            </Link>
+          </div>
         </div>
-        {isLoggedIn ? (
-          <LoggedInHeader
-            showDropdown={showDropdown}
-            handleDropdownToggle={handleDropdownToggle}
-            handleChangePassword={handleChangePassword}
-            handleLogout={handleLogout}
-          />
-        ) : (
-          <>
-            <div className="burger-menu"></div>
-            <div className="buttons">
-              <Link to="/login" className="login-button">
-                Log In
-              </Link>
-              <Link to="/signup" className="signup-button">
-                Sign Up
-              </Link>
-            </div>
-          </>
-        )}
-      </div>
-      <DashboardTabs currentPath={currentPath} isLoggedIn={isLoggedIn} />
+
+      </header>
+      {isLoggedIn ? (
+        <LoggedInHeader
+          showDropdown={showDropdown}
+          handleDropdownToggle={handleDropdownToggle}
+          handleChangePassword={handleChangePassword}
+          handleLogout={handleLogout}
+        />
+      ) : null}
       {showFloatingMenu && isLoggedIn && (
         <div className="floating-menu">
           <div className="dropdown-item pointer" onClick={handleChangePassword}>
@@ -133,43 +143,6 @@ const LoggedInHeader = ({
         )}
       </div>
     </div>
-  );
-};
-
-const DashboardTabs = ({ currentPath, isLoggedIn }) => {
-  return (
-    <nav className="tabs">
-      <Link
-        to="/start-learning"
-        className={`tab ${currentPath === '/start-learning' ? 'selected' : ''}`}
-      >
-        <div className="dmv-course-icon"></div>
-        <span>DMV prep course</span>
-      </Link>
-      <Link
-        to="/tests"
-        className={`tab ${currentPath === '/tests' ? 'selected' : ''}`}
-      >
-        <div className="practice-tests-icon"></div>
-        <span>Practice Tests</span>
-      </Link>
-      {isLoggedIn && (
-        <Link
-          to="/statistics"
-          className={`tab ${currentPath === '/statistics' ? 'selected' : ''}`}
-        >
-          <div className="statistics-icon"></div>
-          <span>Statistics</span>
-        </Link>
-      )}
-      <Link
-        to="/hand-book"
-        className={`tab ${currentPath === '/hand-book' ? 'selected' : ''}`}
-      >
-        <div className="handbook-icon"></div>
-        <span>Handbook</span>
-      </Link>
-    </nav>
   );
 };
 

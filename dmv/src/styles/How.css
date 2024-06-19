@@ -1,0 +1,83 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+  }
+  
+  .containerTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .containerTitle span {
+    color: #178481;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .contentCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .contentRow {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .iconWrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #e5f4f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .book,
+  .checkMarks,
+  .flag,
+  .car {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+  }
+  
+  .topCurve,
+  .bottomCurve {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background-color: #f2f2f2;
+  }
+  
+  .topCurve {
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .bottomCurve {
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: #666;
+  }
+  

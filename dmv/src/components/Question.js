@@ -2,105 +2,105 @@ import React, { useState } from 'react';
 import '../styles/Question.css';
 import { useNavigate } from 'react-router-dom';
 
-  const Question = () => {
-    const [currentQuestion, setCurrentQuestion] = useState(0);
-    const [selectedAnswer, setSelectedAnswer] = useState(null);
-    const [showNextButton, setShowNextButton] = useState(false);
-    const navigate = useNavigate();
-  
-    const questions = [
-      {
-        id: 1,
-        text: 'Which car goes first?',
-        options: [
-          { letter: 'A', text: 'A', isCorrect: true },
-          { letter: 'B', text: 'B', isCorrect: false },
-          { letter: 'C', text: 'Neither - both cars can pass in front of each other', isCorrect: false },
-        ],
-        image: 'https://media-lessons.zutobi.com/images/original/0f8e8560884e98432bd8f66d32cfb9ff.jpeg',
-      },
-      {
-        id: 2,
-        text: 'Which car goes first?',
-        options: [
-          { letter: 'A', text: 'A', isCorrect: true },
-          { letter: 'B', text: 'B', isCorrect: false },
-          { letter: 'C', text: 'Neither - both cars can pass in front of each other', isCorrect: false },
-        ],
-        image: 'https://media-lessons.zutobi.com/images/original/0f8e8560884e98432bd8f66d32cfb9ff.jpeg',
-      },
-      {
-        id: 3,
-        text: 'Which car goes first?',
-        options: [
-          { letter: 'A', text: 'A', isCorrect: true },
-          { letter: 'B', text: 'B', isCorrect: false },
-          { letter: 'C', text: 'Neither - both cars can pass in front of each other', isCorrect: false },
-        ],
-        image: 'https://media-lessons.zutobi.com/images/original/0f8e8560884e98432bd8f66d32cfb9ff.jpeg',
-      },
-      {
-        id: 4,
-        text: 'Which car goes first?',
-        options: [
-          { letter: 'A', text: 'A', isCorrect: true },
-          { letter: 'B', text: 'B', isCorrect: false },
-          { letter: 'C', text: 'Neither - both cars can pass in front of each other', isCorrect: false },
-        ],
-        image: 'https://media-lessons.zutobi.com/images/original/0f8e8560884e98432bd8f66d32cfb9ff.jpeg',
-      },
-      {
-        id: 5,
-        text: 'Which car goes first?',
-        options: [
-          { letter: 'A', text: 'A', isCorrect: true },
-          { letter: 'B', text: 'B', isCorrect: false },
-          { letter: 'C', text: 'Neither - both cars can pass in front of each other', isCorrect: false },
-        ],
-        image: 'https://media-lessons.zutobi.com/images/original/0f8e8560884e98432bd8f66d32cfb9ff.jpeg',
-      },
-      {
-        id: 6,
-        text: 'Which car goes first?',
-        options: [
-          { letter: 'A', text: 'A', isCorrect: true },
-          { letter: 'B', text: 'B', isCorrect: false },
-          { letter: 'C', text: 'Neither - both cars can pass in front of each other', isCorrect: false },
-        ],
-        image: 'https://media-lessons.zutobi.com/images/original/0f8e8560884e98432bd8f66d32cfb9ff.jpeg',
-      },
-      {
-        id: 7,
-        text: 'Which car goes first?',
-        options: [
-          { letter: 'A', text: 'A', isCorrect: true },
-          { letter: 'B', text: 'B', isCorrect: false },
-          { letter: 'C', text: 'Neither - both cars can pass in front of each other', isCorrect: false },
-        ],
-        image: 'https://media-lessons.zutobi.com/images/original/0f8e8560884e98432bd8f66d32cfb9ff.jpeg',
-      },
-      {
-        id: 8,
-        text: 'Which car goes first?',
-        options: [
-          { letter: 'A', text: 'A', isCorrect: true },
-          { letter: 'B', text: 'B', isCorrect: false },
-          { letter: 'C', text: 'Neither - both cars can pass in front of each other', isCorrect: false },
-        ],
-        image: 'https://media-lessons.zutobi.com/images/original/0f8e8560884e98432bd8f66d32cfb9ff.jpeg',
-      },
-      {
-        id: 9,
-        text: 'Which car goes first?',
-        options: [
-          { letter: 'A', text: 'A', isCorrect: true },
-          { letter: 'B', text: 'B', isCorrect: false },
-          { letter: 'C', text: 'Neither - both cars can pass in front of each other', isCorrect: false },
-        ],
-        image: 'https://media-lessons.zutobi.com/images/original/0f8e8560884e98432bd8f66d32cfb9ff.jpeg',
-      },
-    ];
-  
+const Question = () => {
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [showNextButton, setShowNextButton] = useState(false);
+  const navigate = useNavigate();
+
+  const questions = [
+    {
+      id: 1,
+      text: 'Which car goes first?',
+      options: [
+        { letter: 'A', text: 'A', isCorrect: true },
+        { letter: 'B', text: 'B', isCorrect: false },
+        { letter: 'C', text: 'Neither - both cars can pass in front of each other', isCorrect: false },
+      ],
+      image: 'https://media-lessons.zutobi.com/images/original/0f8e8560884e98432bd8f66d32cfb9ff.jpeg',
+    },
+    {
+      id: 2,
+      text: 'Which car goes first?',
+      options: [
+        { letter: 'A', text: 'A', isCorrect: true },
+        { letter: 'B', text: 'B', isCorrect: false },
+        { letter: 'C', text: 'Neither - both cars can pass in front of each other', isCorrect: false },
+      ],
+      image: 'https://media-lessons.zutobi.com/images/original/0f8e8560884e98432bd8f66d32cfb9ff.jpeg',
+    },
+    {
+      id: 3,
+      text: 'Which car goes first?',
+      options: [
+        { letter: 'A', text: 'A', isCorrect: true },
+        { letter: 'B', text: 'B', isCorrect: false },
+        { letter: 'C', text: 'Neither - both cars can pass in front of each other', isCorrect: false },
+      ],
+      image: 'https://media-lessons.zutobi.com/images/original/0f8e8560884e98432bd8f66d32cfb9ff.jpeg',
+    },
+    {
+      id: 4,
+      text: 'Which car goes first?',
+      options: [
+        { letter: 'A', text: 'A', isCorrect: true },
+        { letter: 'B', text: 'B', isCorrect: false },
+        { letter: 'C', text: 'Neither - both cars can pass in front of each other', isCorrect: false },
+      ],
+      image: 'https://media-lessons.zutobi.com/images/original/0f8e8560884e98432bd8f66d32cfb9ff.jpeg',
+    },
+    {
+      id: 5,
+      text: 'Which car goes first?',
+      options: [
+        { letter: 'A', text: 'A', isCorrect: true },
+        { letter: 'B', text: 'B', isCorrect: false },
+        { letter: 'C', text: 'Neither - both cars can pass in front of each other', isCorrect: false },
+      ],
+      image: 'https://media-lessons.zutobi.com/images/original/0f8e8560884e98432bd8f66d32cfb9ff.jpeg',
+    },
+    {
+      id: 6,
+      text: 'Which car goes first?',
+      options: [
+        { letter: 'A', text: 'A', isCorrect: true },
+        { letter: 'B', text: 'B', isCorrect: false },
+        { letter: 'C', text: 'Neither - both cars can pass in front of each other', isCorrect: false },
+      ],
+      image: 'https://media-lessons.zutobi.com/images/original/0f8e8560884e98432bd8f66d32cfb9ff.jpeg',
+    },
+    {
+      id: 7,
+      text: 'Which car goes first?',
+      options: [
+        { letter: 'A', text: 'A', isCorrect: true },
+        { letter: 'B', text: 'B', isCorrect: false },
+        { letter: 'C', text: 'Neither - both cars can pass in front of each other', isCorrect: false },
+      ],
+      image: 'https://media-lessons.zutobi.com/images/original/0f8e8560884e98432bd8f66d32cfb9ff.jpeg',
+    },
+    {
+      id: 8,
+      text: 'Which car goes first?',
+      options: [
+        { letter: 'A', text: 'A', isCorrect: true },
+        { letter: 'B', text: 'B', isCorrect: false },
+        { letter: 'C', text: 'Neither - both cars can pass in front of each other', isCorrect: false },
+      ],
+      image: 'https://media-lessons.zutobi.com/images/original/0f8e8560884e98432bd8f66d32cfb9ff.jpeg',
+    },
+    {
+      id: 9,
+      text: 'Which car goes first?',
+      options: [
+        { letter: 'A', text: 'A', isCorrect: true },
+        { letter: 'B', text: 'B', isCorrect: false },
+        { letter: 'C', text: 'Neither - both cars can pass in front of each other', isCorrect: false },
+      ],
+      image: 'https://media-lessons.zutobi.com/images/original/0f8e8560884e98432bd8f66d32cfb9ff.jpeg',
+    },
+  ];
+
   const totalQuestions = questions.length;
   const remainingQuestions = totalQuestions - currentQuestion - 1;
   const progressPercentage = ((currentQuestion + 1) / totalQuestions) * 100;
@@ -111,23 +111,14 @@ import { useNavigate } from 'react-router-dom';
   };
 
   const handleNextQuestion = () => {
-    setSelectedAnswer(null);
-    setShowNextButton(false);
-    setCurrentQuestion((prevQuestion) => prevQuestion + 1);
+    if (currentQuestion === totalQuestions - 1) {
+      navigate('/lesson-results');
+    } else {
+      setSelectedAnswer(null);
+      setShowNextButton(false);
+      setCurrentQuestion((prevQuestion) => prevQuestion + 1);
+    }
   };
-
-  const handleFinishQuiz = () => {
-    navigate('/lesson-results')
-  }
-
-  if (currentQuestion >= questions.length) {
-    return (
-      <div>
-        <h2>Quiz finished!</h2>
-        <button onClick={handleFinishQuiz}>View results</button>
-      </div>
-    );
-  }
 
   const renderAnswerOption = (option) => {
     const isSelected = selectedAnswer === option;
@@ -168,7 +159,44 @@ import { useNavigate } from 'react-router-dom';
         style={{ backgroundColor: optionBackgroundColor }}
       >
         <div className={letterClass}>{letterContent}</div>
-        <div className="answer-text">{option.text}</div>
+        <div className="answer-text">{option.text}</div> 
+      </div>
+    );
+  };
+
+  const QuestionHeader = ({ remainingQuestions, progressPercentage }) => {
+    return (
+      <div className="question-header">
+        <div className="remaining-questions">{remainingQuestions} remaining</div>
+        <div className="progress-container">
+          <div className="progress-bar">
+            <div className="progress-bar-fill" style={{ width: `${progressPercentage}%` }}></div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  const QuestionContent = ({ questionText, questionImage, answerOptions, renderAnswerOption }) => {
+    return (
+      <div className="question-content">
+        <img className="question-image" src={questionImage} alt="Question" />
+        <div className="question-text">{questionText}</div>
+        <AnswerOptions answerOptions={answerOptions} renderAnswerOption={renderAnswerOption} />
+      </div>
+    );
+  };
+
+  const AnswerOptions = ({ answerOptions, renderAnswerOption }) => {
+    return <div className="answer-options">{answerOptions.map(renderAnswerOption)}</div>;
+  };
+
+  const NextQuestionButton = ({ handleNextQuestion }) => {
+    return (
+      <div className="next-question-button-container">
+        <button className="next-question-button" onClick={handleNextQuestion}>
+          {currentQuestion === totalQuestions - 1 ? 'Finish Test' : 'Next Question'}
+        </button>
       </div>
     );
   };
@@ -186,43 +214,5 @@ import { useNavigate } from 'react-router-dom';
     </div>
   );
 };
-
-const QuestionHeader = ({ remainingQuestions, progressPercentage }) => {
-  return (
-    <div className="question-header">
-      <div className="remaining-questions">{remainingQuestions} remaining</div>
-      <div className="progress-container">
-        <div className="progress-bar">
-          <div className="progress-bar-fill" style={{ width: `${progressPercentage}%` }}></div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const QuestionContent = ({ questionText, questionImage, answerOptions, renderAnswerOption }) => {
-  return (
-    <div className="question-content">
-      <img className="question-image" src={questionImage} alt="Question" />
-      <div className="question-text">{questionText}</div>
-      <AnswerOptions answerOptions={answerOptions} renderAnswerOption={renderAnswerOption} />
-    </div>
-  );
-};
-
-const AnswerOptions = ({ answerOptions, renderAnswerOption }) => {
-  return <div className="answer-options">{answerOptions.map(renderAnswerOption)}</div>;
-};
-
-const NextQuestionButton = ({ handleNextQuestion }) => {
-  return (
-    <div className="next-question-button-container">
-      <button className="next-question-button" onClick={handleNextQuestion}>
-        NEXT QUESTION
-      </button>
-    </div>
-  );
-};
-
 
 export default Question;
